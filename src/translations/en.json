@@ -14,7 +14,8 @@
 
     "banner": {
         "title1": "MEDICAL PLATFORM",
-        "title2": "COMPREHENSIVE HEALTH CARE"
+        "title2": "COMPREHENSIVE HEALTH CARE",
+        "title3": "find a specialist.."
     },
 
     "specialty": {
@@ -43,7 +44,10 @@
             "manage-speciality": "Manage Speciality",
             "handbook": "Handbook",
             "manage-handbook": "Manage Handbook"
-        }
+        },
+        "doctor": {
+            "manage-schedule": "Manage medical plan"
+         }
     },
 
     "manage-user": {
@@ -61,5 +65,30 @@
         "upload-image": "Upload Image",
         "save": "Save",
         "edit": "Save changes"
+    },
+    "homepage": {
+        "out-standing-doctor": "Featured doctor of the week",
+        "medical-facility": "Outstanding medical facilities",
+        "popular-specialties": "Popular speciality",
+        "handbook": "Handbook",
+        "who": "WHO said about virus HMPV",
+        "more-info": "More Info"
+    },
+
+    "table-manage": {
+        "user-info-manage": "USER INFO SYSTEM"
+    },
+
+    "manage-schedule": {
+        "title": "MANAGE DOCTOR'S EXAMINATION PLAN",
+        "choose-doctor": "Choose Doctor",
+        "choose-date": "Choose Date",
+        "save": "Confirm"
+    },
+    "manage-doctor": {
+        "create-info-doctor": "CREATE MORE DOCTOR INFORMATION",
+        "choose-doctor": "Choose Doctor",
+        "intro-info": "Intro Infor"
     }
+
 }

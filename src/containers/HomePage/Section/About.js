@@ -9,17 +9,17 @@ class About extends Component {
         return (
             <div className='section-share section-about'>
                <div className='section-about-header'>
-                    Y tế thế giới nói gì về loại virus mới HMPV
+                    <FormattedMessage id='homepage.who' />
                </div>
                <div className='section-about-content'>
                     <div className='content-left'>
                     <iframe width="100%" height="400px"
                     src="https://www.youtube.com/embed/Qqo3L-MdIxE" 
                     title="WHO xác nhận HMPV không phải là loại virus mới | VTV24" 
-                    frameborder="0" 
+                    frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen></iframe>
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen></iframe>
                     </div>
                     <div className='content-right'>
                         <p>
