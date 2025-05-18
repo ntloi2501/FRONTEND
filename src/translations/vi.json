@@ -88,7 +88,48 @@
     "manage-doctor": {
         "create-info-doctor": "TẠO THÊM THÔNG TIN BÁC SĨ",
         "choose-doctor": "Chọn bác sĩ",
-        "intro-info": "Thông tin giới thiệu "
+        "intro-info": "Thông tin giới thiệu ",
+        "price": "Giá khám bệnh",
+        "payment": "Phương thức thanh toán",
+        "province": "Tỉnh thành",
+        "name-clinic": "Tên phòng khám",
+        "address-clinic": "Địa chỉ phòng khám",
+        "note": "Ghi chú",
+        "specialty": "Chọn chuyên khoa",
+        "clinic": "Chọn phòng khám"
+    },
+    "patient": {
+        "detail-doctor": {
+            "schedule": "Lịch Khám",
+            "no-schedule": "Bác sĩ không có lịch hẹn trong thời gian này, vui lòng chọn thời gian khác !",
+            "choose": " Chọn ",
+            "book-free": " và đặt (miễn phí) "
+        },
+        "extra-infor-doctor": {
+            "text-address": "ĐỊA CHỈ KHÁM",
+            "price": "GIÁ KHÁM:",
+            "detail": "Xem chi tiết",
+            "payment": "Người bệnh có thể thanh toán bằng hình thức:",
+            "hide-price-list": "Ẩn bảng giá"
+        },
+        "booking-modal" : {
+            "title": "Thông tin đặt lịch khám bệnh",
+            "name": "Họ tên",
+            "phone-number": "Số điện thoại",
+            "email-address": "Địa chỉ email",
+            "contact": "Địa chỉ liên hệ",
+            "reason": "Lý do khám",
+            "birthday": "Ngày sinh",
+            "gender": "Giới tính",
+            "btn-confirm": "Xác nhận",
+            "btn-cancel": "Hủy",
+            "price-booking": "Miễn phí đặt lịch",
+            "price": "Giá khám: "
+        },
+        "confirm-email": {
+            "success": "XÁC NHẬN LỊCH HẸN THÀNH CÔNG !",
+            "fail": "LỊCH HẸN ĐÃ TỒN TẠI HOẶC ĐÃ ĐƯỢC XÁC NHẬN !"
+        }
     }
     
 }

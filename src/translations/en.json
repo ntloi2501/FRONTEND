@@ -88,7 +88,49 @@
     "manage-doctor": {
         "create-info-doctor": "CREATE MORE DOCTOR INFORMATION",
         "choose-doctor": "Choose Doctor",
-        "intro-info": "Intro Infor"
+        "intro-info": "Intro Infor",
+        "price": "Examination price ",
+        "payment": "Payment method",
+        "province": "Province",
+        "name-clinic": "Name clinic",
+        "address-clinic": "Address clinic",
+        "note": "Note",
+        "specialty": "Choose specialty",
+        "clinic": "Choose clinic"
+    },
+
+    "patient": {
+        "detail-doctor": {
+            "schedule": "Schedule",
+            "no-schedule": "The doctor does not have appointments available during this time, please choose another time !",
+            "choose": " Choose ",
+            "book-free": " and book (free) "
+        },
+        "extra-infor-doctor": {
+            "text-address": "ADDRESS MEDICAL",
+            "price": "PRICE:",
+            "detail": "Watch Detail",
+            "payment": "Patients can pay by:",
+            "hide-price-list": "Hide price list"
+        },
+        "booking-modal" : {
+            "title": "Appointment information",
+            "name": "Full name",
+            "phone-number": "Phone number",
+            "email-address": "Email address",
+            "contact": "Contact",
+            "reason": "Reason",
+            "birthday": "Birthday",
+            "gender": "Gender",
+            "btn-confirm": "Confirm",
+            "btn-cancel": "Cancel",
+            "price-booking": "Booking schedule free",
+            "price": "Price: "
+        },
+        "confirm-email": {
+            "success": "APPOINTMENT CONFIRMED SUCCESSFULLY !",
+            "fail": "APPOINTMENT ALREADY EXISTS OR HAS BEEN CONFIRMED !"
+        }
     }
 
 }

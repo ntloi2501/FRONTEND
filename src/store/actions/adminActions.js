@@ -1,6 +1,7 @@
 import actionTypes from "./actionTypes";
 import { getAllCodeService, createNewUserService, getAllUsers, 
-  deleteUserService, editUserService, getTopDoctorHomeService, getAllDoctors, saveDetailDoctorService } 
+  deleteUserService, editUserService, getTopDoctorHomeService, 
+  getAllDoctors, saveDetailDoctorService, getAllSpecialty } 
   from "../../services/userService";
 import { Toast } from "reactstrap";
 import { toast } from "react-toastify";
@@ -291,3 +292,45 @@ export const fetchAllScheduleTime = () => {
     }
   }
 }
+
+
+export const getRequireDoctorInfor = () => {
+  return async (dispatch, getState) => {
+    try {
+      dispatch({
+        type: actionTypes.FETCH_REQUIRE_DOCTOR_INFOR_START,
+      });
+      let resPrice = await getAllCodeService("PRICE");
+      let resPayment = await getAllCodeService("PAYMENT");
+      let resProvince = await getAllCodeService("PROVINCE");
+      let resSpecialty = await getAllSpecialty()
+
+      if (resPrice && resPrice.errCode === 0 
+        && resPayment && resPayment.errCode === 0 
+        && resProvince && resProvince.errCode === 0
+        && resSpecialty && resSpecialty.errCode ===0 ) {
+          let data = {
+            resPrice: resPrice.data,
+            resPayment: resPayment.data,
+            resProvince: resProvince.data,
+            resSpecialty: resSpecialty.data
+          }
+        dispatch(fetchAllRequireDoctorInforSuccess(data));
+      } else {
+        dispatch(fetchAllRequireDoctorInforFailed());
+      }
+    } catch (e) {
+      dispatch(fetchAllRequireDoctorInforFailed());
+      console.log("fetchAllRequireDoctorInforFailed error", e);
+    }
+  };
+};
+
+export const fetchAllRequireDoctorInforSuccess = (allRequiredData) => ({
+  type: actionTypes.FETCH_REQUIRE_DOCTOR_INFOR_SUCCESS,
+  data: allRequiredData,
+});
+
+export const fetchAllRequireDoctorInforFailed = () => ({
+  type: actionTypes.FETCH_REQUIRE_DOCTOR_INFOR_FAILDED,
+});
